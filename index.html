@@ -5,82 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LP for Photobel</title>
+
+    
+    <link rel="stylesheet" href="content/css/components/reset.css">
+    <link rel="stylesheet" href="content/css/components/grid.css">
+    <link rel="stylesheet" href="content/css/components/flex.css">
+    <link rel="stylesheet" href="content/css/components/nav.css">
+    <link rel="stylesheet" href="content/css/components/block.css">
+    <link rel="stylesheet" href="content/css/components/button.css">
+    <link rel="stylesheet" href="content/css/components/input.css">
+    <link rel="stylesheet" href="content/css/components/list.css">
+    <link rel="stylesheet" href="content/css/components/panel.css">
+    <link rel="stylesheet" href="content/css/components/text.css">
+    <link rel="stylesheet" href="content/css/components/utilits.css">
+    <link rel="stylesheet" href="content/css/components/footer.css">
+
+    <!-- <link rel="stylesheet" href="content/css/site.min.css"> -->
 </head>
 <body>
     
-    <header>
-        <a href="">
-            <img src="" alt="">
-        </a>
-        <nav class="">
-            <a href="">Исполнителям</a>
-            <a href="">Заказчикам</a>
-            <a href="">Войти</a>
-        </nav>
+    <header class="nav">
+        <div class="nav__container container">
+            <div class="grid grid--sm">
+                <div class="col--1-6">
+                    <a class="nav__logo" href="">
+                        <img class="nav__logo-img" src="" alt="">
+                    </a>
+                </div>
+                <div class="col--4-6">
+                    <a class="nav__link" href="">Исполнителям</a>
+                    <a class="nav__link active" href="">Заказчикам</a>
+                </div>
+                <div class="col--1-6 t--r">
+                    <a class="nav__btn btn" href="">Войти</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <div class="block block--img">
+    <div class="block block--lg block--img t--c" style="background-image: url(https://images.unsplash.com/photo-1495073613335-7af8e711f273?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=022166e998acc0dfe62fba6561b7e1ec&auto=format&fit=crop&w=3300&q=80)">
         <div class="container">
-            <h1>Размещайте в Толоке несложные задания и получайте нужный результат</h1>
-            <h2>Десятки тысяч людей готовы помочь вам</h2>
-            <a href="">Зарегистрироваться</a>
+            <h1 class="t--white t--h1">Размещайте в Толоке несложные задания и получайте нужный результат</h1>
+            <h2 class="t--h4 t--regular t--white m--v-md">Десятки тысяч людей готовы помочь вам</h2>
+            <a class="btn btn--lg btn--yellow" href="">Зарегистрироваться</a>
         </div>
     </div>
 
-    <div class="container">
-        <h3>Какими могут быть задания</h3>
-
-        <div class="grid grid--collapse">
-            <div class="col--1-3"></div>
-            <div class="col--1-3"></div>
-            <div class="col--1-3"></div>
-            <div class="col--1-3"></div>
-            <div class="col--1-3"></div>
-            <div class="col--1-3"></div>
+    <div class="block block--lg t--c">
+        <div class="container">
+            <h3 class="t--h2 m--b-lg">Какими могут быть задания</h3>
+    
+            <ul class="list list--icon">
+                <li class="list__item">
+                    <div class="list__icon icon">
+                        <img src="content/svg/idea.svg" alt="">
+                    </div>
+                    <h4 class="list__title">Категоризация и проставление тегов</h4>
+                    <p class="list__text">Присвоение товарам свойств, а фотографиям и видео — тегов, по которым их легко найти на сайте.</p>
+                </li>
+                <li class="list__item">
+                    <div class="list__icon icon">
+                        <img src="content/svg/diagram.svg" alt="">
+                    </div>
+                    <h4 class="list__title">Категоризация и проставление тегов</h4>
+                    <p class="list__text">Присвоение товарам свойств, а фотографиям и видео — тегов, по которым их легко найти на сайте.</p>
+                </li>
+                <li class="list__item">
+                    <div class="list__icon icon">
+                        <img src="content/svg/certificate.svg" alt="">
+                    </div>
+                    <h4 class="list__title">Категоризация и проставление тегов</h4>
+                    <p class="list__text">Присвоение товарам свойств, а фотографиям и видео — тегов, по которым их легко найти на сайте.</p>
+                </li>
+                <li class="list__item">
+                    <div class="list__icon icon">
+                        <img src="content/svg/medal.svg" alt="">
+                    </div>
+                    <h4 class="list__title">Категоризация и проставление тегов</h4>
+                    <p class="list__text">Присвоение товарам свойств, а фотографиям и видео — тегов, по которым их легко найти на сайте.</p>
+                </li>
+                <li class="list__item">
+                    <div class="list__icon icon">
+                        <img src="content/svg/video-player.svg" alt="">
+                    </div>
+                    <h4 class="list__title">Категоризация и проставление тегов</h4>
+                    <p class="list__text">Присвоение товарам свойств, а фотографиям и видео — тегов, по которым их легко найти на сайте.</p>
+                </li>
+                <li class="list__item">
+                    <div class="list__icon icon">
+                        <img src="content/svg/profile.svg" alt="">
+                    </div>
+                    <h4 class="list__title">Категоризация и проставление тегов</h4>
+                    <p class="list__text">Присвоение товарам свойств, а фотографиям и видео — тегов, по которым их легко найти на сайте.</p>
+                </li>
+            </ul>
+            <p class="t--muted t--h6">О том, какие задания размещать нельзя,
+                <a class="link link--line" href="">читайте в правилах</a>
+            </p>
         </div>
-        <p>О том, какие задания размещать нельзя,
-            <a href="">читайте в правилах</a>
-        </p>
     </div>
 
-    <div class="block block--brown-light">
+    <div class="block block--lg block--brown-light">
         <div class="container">
-            <h3>Почему Толока</h3>
+            <h3 class="t--h3 t--c m--b-lg">Почему Толока</h3>
             <div class="grid">
-                <div class="col--1-3"></div>
-                <div class="col--1-3"></div>
-                <div class="col--1-3"></div>
-                <div class="col--1-3"></div>
-                <div class="col--1-3"></div>
+                <div class="col--1-3">
+                    <p class="t--h4 m--b">Гибкость</p>
+                    <p>Вы самостоятельно устанавливаете цену, сроки и ограничения для исполнителей</p>
+                </div>
+                <div class="col--1-3">
+                    <p class="t--h4 m--b">Масштабируемость</p>
+                    <p>Задание будет выполняться с нужной вам скоростью — даже если его объём резко увеличится</p>
+                </div>
+                <div class="col--1-3">
+                    <p class="t--h4 m--b">Доступность 24/7</p>
+                    <p>Исполнитель найдётся всегда — даже ночью и в выходные</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col--1-3">
+                    <p class="t--h4 m--b">Быстрый результат</p>
+                    <p>Вы самостоятельно устанавливаете цену, сроки и ограничения для исполнителей</p>
+                </div>
+                <div class="col--1-3">
+                    <p class="t--h4 m--b">Экономия</p>
+                    <p>Задание будет выполняться с нужной вам скоростью — даже если его объём резко увеличится</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="block">
-        <h3>Как работать с Толокой</h3>
-        <div class="grid">
-            <div class="col--1-3"></div>
-            <div class="col--1-3"></div>
-            <div class="col--1-3"></div>
+    <div class="block block--lg block--gray-dark">
+        <div class="container">
+            <h2 class="t--h2 t--yellow t--c m--b-lg">Сколько это стоит</h2>
+            <div class="grid flex flex--middle t--c">
+                <div class="col--3-10 push--1-10">
+                    <div class="block__plus">
+                        <p class="t--h5 m--b-md">Плата исполнителю</p>
+                        <p>Цену за каждое задание и размер бонуса назначаете вы, но она не должна быть ниже одного цента.</p>
+                    </div>
+                </div>
+                <div class="col--2-10 push--1-10">
+                    <p class="t--h2">+</p>
+                </div>
+                <div class="col--3-10 push--1-10">
+                    <div class="block__plus">
+                        <p class="t--h5 m--b-md">Сборы Толоки</p>
+                        <p>20% от суммы, которую получает исполнитель, но не менее 0,5 цента.</p>                        
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="block block--gray-dark">
-        <h3>Сколько это стоит</h3>
-        
-    </div>
-
-    <div class="block block--gray-dark">
-        <h3>Как подключиться к Толоке</h3>
-        <p>Прежде чем публиковать задания, зарегистрируйтесь — это займёт примерно 5 минут.</p>
-        <div class="t--c">
-            <a href="">Зарегистрироваться</a>
-            <a href="">Задать вопрос</a>
+    <div class="block block--lg block--gray-light">
+        <div class="container t--c">
+            <h3 class="t--h2">Как подключиться к Толоке</h3>
+            <p class="t--h4 m--v-md">Прежде чем публиковать задания, зарегистрируйтесь — это займёт примерно 5 минут.</p>
+            <div class="t--c">
+                <a class="btn btn--md btn--yellow" href="">Зарегистрироваться</a>
+                <a class="btn btn--md" href="">Задать вопрос</a>
+            </div>
         </div>
     </div>
 
     <footer class="footer">
-
+        <div class="container">
+            <div class="grid">
+                <div class="col--3-4">
+                    <a class="footer__link" href="">О сервисе</a>
+                    <a class="footer__link" href="">Обратная связь</a>
+                    <a class="footer__link" href="">Договор оферты</a>
+                    <a class="footer__link" href="">Помощь</a>
+                </div>
+                <div class="col--1-4">
+                     <a class="footer__link" href="">www.Фото.бел</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
